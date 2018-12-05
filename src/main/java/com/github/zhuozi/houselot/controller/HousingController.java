@@ -14,8 +14,6 @@ import java.time.LocalTime;
  * Email: zhuozi@meili-inc.com
  * Datetime: 2018-12-04 18:32
  */
-
-
 @RestController
 @RequestMapping("/housing")
 public class HousingController {
@@ -27,11 +25,5 @@ public class HousingController {
     @GetMapping("/index")
     public String index() {
         return "当前时间为: " + LocalTime.now();
-    }
-
-    @GetMapping("/delete")
-    public Integer delete(Long id) {
-        logger.info("要删除的ID:" + id);
-        return housingMapper.delete(id);
     }
 }
