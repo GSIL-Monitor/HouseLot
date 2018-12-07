@@ -36,9 +36,20 @@ public class HousingEntity {
     private String description;
 
     /**
+     * 售卖状态
+     * @see com.github.zhuozi.houselot.domain.constants.SaleStatus
+     */
+    private Integer saleStatus;
+
+    /**
      * 号码前缀
      */
     private String prefix;
+
+    /**
+     * 房源总数
+     */
+    private String total;
 
     /**
      * 创建时间
